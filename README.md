@@ -52,22 +52,12 @@ Important: `src_mac` is reported in an alert, but not used as a predictive featu
 - Confusion matrix in `[Normal, Deauth flood]` row/column order: `[[156,0],[0,120]]`.
 - This benchmark has no false positives or false negatives **on this synthetic holdout only**.
 
-## 10-minute live demonstration plan
-1. (1 min) State purpose, WIDS vs WIPS, authorised scope.
-2. (1 min) Show CSV columns; explain synthetic status.
-3. (2 min) Explain `windows()` feature extraction with one source-MAC/time window.
-4. (2 min) Run `python wids.py train`; show accuracy and confusion matrix.
-5. (2 min) Run `python wids.py demo`; show alert logs and MAC address.
-6. (1 min) Explain session-level holdout, false positives, and data limitations.
-7. (1 min) Future improvement: authorised real traffic/ AWID3, live monitor-mode adapter, class-balanced realistic benign examples, robustness tests.
 
-## Poster and academic submission
-`A1_WIDS_Poster_DRAFT.pdf` is an A1 poster template with the **synthetic** measured numbers already populated. Replace `Student name / course` and use true real-data results if your lecturer expects public-dataset or live captured performance. Include your school's required details. The poster must not claim this prototype currently captures live radio traffic.
 
-### Sample transparent AI-assistance disclosure
-> I used ChatGPT to help structure the Python prototype, generate the synthetic test dataset, implement scikit-learn evaluation, and lay out the poster. I reviewed the source code and ran and interpreted the tests myself.
 
-Edit this statement to match your actual contribution.
+I used ChatGPT to help structure the Python prototype, generate the synthetic test dataset, implement scikit-learn evaluation, and lay out the poster. I reviewed the source code and ran and interpreted the tests myself.
+
+
 
 ## Troubleshooting
 - `py is not recognized`: install Python with the launcher from python.org, then reopen PowerShell.
@@ -76,7 +66,3 @@ Edit this statement to match your actual contribution.
 - `ValueError Missing CSV fields`: use the schema shown above.
 - 100% accuracy on synthetic data is not evidence that it will work with unseen real captures.
 
-## Repository and Classroom submission
-The repository contains the runnable prototype, synthetic example data, evaluation results, and an **A1 poster draft** in `poster/`. To publish and submit the repository link, follow [GITHUB_SUBMISSION.md](GITHUB_SUBMISSION.md). You must submit the **GitHub repository URL** in Classroom under the revised instructions.
-
-This repo does not yet demonstrate live Wi-Fi capture or accuracy on AWID3/real traffic. A real-data evaluation is a remaining requirement for the assignment, not a completed feature.
