@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+      Normal       1.00      1.00      1.00       156
+Deauth flood       1.00      1.00      1.00       120
+
+    accuracy                           1.00       276
+   macro avg       1.00      1.00      1.00       276
+weighted avg       1.00      1.00      1.00       276

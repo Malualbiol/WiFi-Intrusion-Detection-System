@@ -1,0 +1,26 @@
+{
+  "accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      156,
+      0
+    ],
+    [
+      0,
+      120
+    ]
+  ],
+  "train_windows": 804,
+  "test_windows": 276,
+  "train_sessions": 67,
+  "test_sessions": 23,
+  "dataset": "/mnt/data/github_ready/wids_windows_project/data/synthetic_wifi_frames.csv",
+  "features": [
+    "frames_per_second",
+    "deauth_per_second",
+    "deauth_ratio",
+    "mean_signal_dbm",
+    "management_ratio"
+  ],
+  "note": "Results from synthetic traffic ONLY unless replaced by a real labelled dataset."
+}
